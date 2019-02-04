@@ -12,7 +12,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         Mathematics mathematics = new Mathematics();
         Sentences sentences = new Sentences();
-        int menu;
+        int menu, bil;
 
         do {
             System.out.println("BELAJAR");
@@ -20,6 +20,9 @@ public class Main {
             System.out.println("[2] Fibonacci");
             System.out.println("[3] Prime");
             System.out.println("[4] Reverse Stringg");
+            System.out.println("[5] Bilangan Faktorial");
+            System.out.println("[6] Pohon Faktor");
+            System.out.println("[7] Segitiga Siku-Siku");
             System.out.println("--------------------------");
             System.out.println("Input Menu >> "); menu=in.nextInt();
             System.out.println("menu="+menu);
@@ -30,7 +33,7 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("*) Fibonacci");
-                    System.out.println("Masukkan Bilangan: "); int bil=in.nextInt();
+                    System.out.println("Masukkan Bilangan: "); bil=in.nextInt();
                     System.out.println("Hasil: "+mathematics.fibonacci(bil));
                     break;
                 case 3:
@@ -41,6 +44,23 @@ public class Main {
                 case 4:
                     System.out.println("*) Reverse String");
                     System.out.println("Hasil:"+sentences.reverseString("satya syahputra", 15));
+                    break;
+                case 5:
+                    System.out.println("*) Faktorial");
+                    System.out.println("Masukkan Bilangan: "); bil=in.nextInt();
+                    System.out.println("Hasil Rekursif: "+mathematics.bilanganFaktorial(bil));
+                    System.out.println("Hasil For:"+mathematics.forBilanganFaktorial(bil));
+                    break;
+                case 6:
+                    System.out.println("*) Pohon Faktor");
+                    System.out.println("Masukan Bilangan: "); bil =in.nextInt();
+
+                    break;
+                case 7:
+//                    System.out.println("*) Segitiga Siku-Siku Pake For");
+//                    mathematics.segitigaSikuSiku();
+                    System.out.println("*) Segitiga Siku-Siku Pake Rekursif");
+                    System.out.print(mathematics.segitigaSikuSikuRekursif(5));
                     break;
                 case 0:
                     break;
