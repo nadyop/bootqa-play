@@ -15,7 +15,7 @@ public class Main {
         int menu;
 
         do {
-            System.out.println("BELAJAR ASIQUE");
+            System.out.println("BELAJAR");
             System.out.println("[1] Power");
             System.out.println("[2] Fibonacci");
             System.out.println("[3] Prime");
@@ -25,18 +25,22 @@ public class Main {
             System.out.println("menu="+menu);
             switch (menu){
                 case 1:
-                    System.out.println("Hasil: ");
-                    mathematics.pow(2, 3);
+                    System.out.println("*) Power");
+                    System.out.println("Hasil: "+mathematics.pow(2, 3));
                     break;
                 case 2:
-                    System.out.println("cek2");
-                    mathematics.fibonacci(4);
+                    System.out.println("*) Fibonacci");
+                    System.out.println("Masukkan Bilangan: "); int bil=in.nextInt();
+                    System.out.println("Hasil: "+mathematics.fibonacci(bil));
                     break;
                 case 3:
-                    mathematics.isPrime(3, 2);
+                    System.out.println("*) Bilangan Prima");
+                    System.out.println("Masukkan bilangan: "); int bilangan = in.nextInt();
+                    System.out.println("Hasil: "+mathematics.isPrime(bilangan, 2));
                     break;
                 case 4:
-                    sentences.reverseString("satya syahputra", 15);
+                    System.out.println("*) Reverse String");
+                    System.out.println("Hasil:"+sentences.reverseString("satya syahputra", 15));
                     break;
                 case 0:
                     break;
