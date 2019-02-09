@@ -23,6 +23,12 @@ public class Main {
             System.out.println("[5] Bilangan Faktorial");
             System.out.println("[6] Pohon Faktor");
             System.out.println("[7] Segitiga Siku-Siku");
+            System.out.println("[8] Java Formatter");
+            System.out.println("[9] Plus Minus");
+            System.out.println("[10] Segitiga siku-siku Kanan");
+            System.out.println("[11] Min-Max Sum");
+            System.out.println("[12] Birthday Cake");
+            System.out.println("[13] Time Conversion");
             System.out.println("--------------------------");
             System.out.println("Input Menu >> "); menu=in.nextInt();
             System.out.println("menu="+menu);
@@ -57,10 +63,32 @@ public class Main {
 
                     break;
                 case 7:
-//                    System.out.println("*) Segitiga Siku-Siku Pake For");
-//                    mathematics.segitigaSikuSiku();
                     System.out.println("*) Segitiga Siku-Siku Pake Rekursif");
                     System.out.print(mathematics.segitigaSikuSikuRekursif(5));
+                    break;
+                case 8:
+                    System.out.println("*) Java Formatter");
+                    sentences.javaFormatter();
+                    break;
+                case 9:
+                    System.out.println("*) Plus Minus");
+                    mathematics.plusMinus();
+                    break;
+                case 10:
+                    System.out.println("*) Segitiga siku-siku kanan");
+                    mathematics.segitigaSikuSikuKanan();
+                    break;
+                case 11:
+                    System.out.println("*) Min-Max Sum");
+                    mathematics.minMaxSum();
+                    break;
+                case 12:
+                    System.out.println("*) Birthday Cake");
+                    mathematics.birthdayCakeCandles();
+                    break;
+                case 13:
+                    System.out.println("*) Time Conversion");
+                    mathematics.timeConversion();
                     break;
                 case 0:
                     break;
