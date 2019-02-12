@@ -191,4 +191,77 @@ class Mathematics {
       String hasil = String.valueOf(jamAwal)+ input.substring(2, 8);
       System.out.println("Hasilnya:"+hasil);
     }
+    int sumPertama = 0;
+    int sumKedua = 0;
+    void diagonalInteger() {
+      int[][] arr= {
+          {1,2,3,5},
+          {4,5,6,1},
+          {7,8,9,2},
+          {0,1,0,1}
+      };
+      int z = arr[0].length-1;
+
+      for (int i=0; i<arr.length; i++) {
+
+        for (int j = 0; j < arr[i].length; j++) {
+          System.out.print(arr[i][j]);
+          if(i == j ){
+            sumPertama = sumPertama + arr[i][j];
+          }
+          if(j == z){
+            sumKedua = sumKedua + arr[i][j];
+            z--;
+          }
+        }
+        System.out.println("");
+      }
+      System.out.println("Sum Diagonal Pertama:"+Math.abs(sumPertama-sumKedua));
+    }
+
+    void gradingStudents() {
+      System.out.println("Masukkan Jumlah Nilai: "); int count = scanner.nextInt();
+      int[] arrGrade = new int[count];
+
+      for(int i=0; i<count;i++){
+        System.out.println("angka=");  arrGrade[i] = scanner.nextInt();
+      }
+
+      for(int i=0; i<count;i++){
+        if(differenceValue(arrGrade[i], nextMultipleFive(arrGrade[i]))< 3 && (arrGrade[i]>=38)){
+          arrGrade[i] = nextMultipleFive(arrGrade[i]);
+        }
+      }
+
+      for(int i=0; i<count;i++){
+        System.out.println("angka="+arrGrade[i]);
+      }
+    }
+
+    int nextMultipleFive(int value){
+      while (value % 5 !=0){
+        value++;
+      }
+      return value;
+    }
+
+    int differenceValue(int firstValue, int multipleValue){
+      return multipleValue - firstValue;
+    }
+
+    void bubblesort() {
+      List<Integer> arr = Arrays.asList(1, 4, 8, 5, 10, 2, 7, 3);
+
+      for (int i = 0; i < arr.size(); i++) {
+        for (int j = i + 1; j < arr.size() ; j++) {
+          if (arr.get(i) > arr.get(j)) {
+            System.out.println("swap : " + arr.get(i) + "&" + arr.get(j));
+            int temp = arr.get(i);
+            arr.set(i, arr.get(j));
+            arr.set(j, temp);
+          }
+          System.out.println(arr);
+        }
+      }
+    }
 }

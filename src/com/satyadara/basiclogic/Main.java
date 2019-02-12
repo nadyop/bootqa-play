@@ -29,6 +29,11 @@ public class Main {
             System.out.println("[11] Min-Max Sum");
             System.out.println("[12] Birthday Cake");
             System.out.println("[13] Time Conversion");
+            System.out.println("[14] Reverse String Counter");
+            System.out.println("[15] Diagonal ");
+            System.out.println("[16] Grading Students");
+            System.out.println("[17] Bubble Sort");
+            System.out.println("[18] Recursion");
             System.out.println("--------------------------");
             System.out.println("Input Menu >> "); menu=in.nextInt();
             System.out.println("menu="+menu);
@@ -89,6 +94,20 @@ public class Main {
                 case 13:
                     System.out.println("*) Time Conversion");
                     mathematics.timeConversion();
+                    break;
+                case 14:
+                    sentences.counterPalindrom();
+                    break;
+                case 15:
+                    mathematics.diagonalInteger();;
+                    break;
+                case 16:
+                    mathematics.gradingStudents();
+                    break;
+                case 17:
+                    mathematics.bubblesort();
+                    break;
+                case 18:
                     break;
                 case 0:
                     break;
