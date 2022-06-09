@@ -1,12 +1,10 @@
-package com.satyadara.basiclogic;
+package com.moka.grandplay;
 
-import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-class Mathematics {
+class Play {
 
     private static final Scanner scanner = new Scanner(System.in);
     // angka=5, pangkat=2
