@@ -1,3 +1,3 @@
-# Basic Logic
-include play formulas and string manipulation that use recursive method on Java Language.
+# Playing
+include play formulas and string manipulation on Java Language.
 
